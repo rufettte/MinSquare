@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Square.h"
 #include "Utils.h"
+using namespace std;
 
 bool Square::isOverlap(Rect a, Rect b) {
 	if (a.getBottomRight().getY() <= b.getTopLeft().getY() || a.getTopLeft().getY() >= b.getBottomRight().getY())

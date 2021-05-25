@@ -1,6 +1,8 @@
+#ifndef SQUARE_H
+#define SQUARE_H
+
 #include <vector>
 #include "Rect.h"
-using namespace std;
 
 /*
 	Square class plays the significant role on placing rectangles within square with minimum size.
@@ -19,13 +21,14 @@ using namespace std;
 */
 class Square {
 	private:
-		vector<Rect> placedRects;
+		std::vector<Rect> placedRects;
 	
 	public:
 		bool isOverlap(Rect a, Rect b);
-		void start(vector<Rect> rects);
+		void start(std::vector<Rect> rects);
 		int calculateSize();
 		bool checkIntersection(Rect tmp);
-		void addToOptimalPlace(vector<Rect> temp);
+		void addToOptimalPlace(std::vector<Rect> temp);
 		void print();
 };
+#endif

@@ -1,5 +1,5 @@
 #include "Utils.h"
-
+using namespace std;
 
 
 vector<Rect> Utils::quickSort(vector<Rect> rects) {	

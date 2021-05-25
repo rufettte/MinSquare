@@ -1,7 +1,9 @@
+#ifndef RECTLOADER_H
+#define RECTLOADER_H
+
 #include <vector>
 #include <string>
 #include "Rect.h"
-using namespace std;
 
 /*
     Loads the rectangles from a text file, whose full path is provided by the user in the command arguments.
@@ -9,9 +11,10 @@ using namespace std;
 class RectLoader
 {
     private:
-        string filePath;
+        std::string filePath;
 
     public:
-        RectLoader(const string& filePath);
-        vector<Rect> load();
+        RectLoader(const std::string& filePath);
+        std::vector<Rect> load();
 };
+#endif

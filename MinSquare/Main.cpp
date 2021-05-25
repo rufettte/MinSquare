@@ -1,9 +1,9 @@
-#include <iostream>
 #include <vector>
 #include "Rect.h"
 #include "RectLoader.h"
 #include "Square.h"
 #include "ErrorMessage.h"
+using namespace std;
 
 void main(int argc, char** argv)
 {

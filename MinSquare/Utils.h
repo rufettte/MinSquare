@@ -1,6 +1,9 @@
+#ifndef UTILS_H
+#define UTILS_H
+
 #include <vector>
 #include "Rect.h"
-using namespace std;
+
 
 /*
 	This class plays a helper role.
@@ -10,6 +13,7 @@ using namespace std;
 */
 class Utils {
 	public:
-		vector<Rect> static quickSort(vector<Rect> rects);
+		std::vector<Rect> static quickSort(std::vector<Rect> rects);
 		bool static isGreater(Rect a, Rect b);
 };
+#endif 
